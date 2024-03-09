@@ -1,0 +1,256 @@
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px black;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo p{
+    color: #171717;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+    color: #626262;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-menu li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #ff4141;
+}
+
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+
+.nav-login-cart button{
+    width: 107px;
+    height: 38px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}
+
+.nav-login-cart button:active{
+    background: #f3f3f3;
+}
+
+.nav-cart-count{
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 11px;
+    font-size: 14px;
+    background: red;
+    color: white;
+}
+
+.nav-small{
+    display: none;
+}
+
+.searchbar{
+    width: 200px;
+    height:30px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+}
+
+.search-results{
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    display: block;
+}
+
+.searchbarresults{
+    margin-top: 5%;
+    height: 90px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #171717;
+}
+
+.search-results p{
+    color: #3d3d3d;
+}
+
+@media(max-width:1280px){
+    .nav-cart-count{
+        padding: 0px;
+    }
+
+    .nav-logo img{
+        width: 40px;
+    }
+
+    .nav-logo p{
+        font-size: 25px;
+    }
+
+    .nav-menu{
+        gap: 30px;
+        font-size: 16px;
+    }
+
+    .nav-login-cart{
+        gap: 30px;
+    }
+
+    .nav-login-cart button{
+        width: 120px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .nav-cart-count{
+        margin-left: -40px;
+        font-size: 12px;
+        width: 0px;
+    }
+}
+
+@media(max-width:1024px){
+    .navbar{
+        padding: 12px 30px;
+    }
+
+    .nav-menu{
+        gap: 25px;
+        font-size: 14px;
+    }
+
+    .nav-login-cart button{
+        width: 80px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .nav-login-cart img{
+        width: 30px;
+    }
+
+    .nav-cart-count{
+        width: 18px;
+        height: 18px;
+    }
+
+    .searchbar{
+        width: 100px;
+    }
+}
+
+@media(max-width:800px){
+    .navbar{
+        padding: 10px 0px;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+
+    .nav-small{
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 35px;
+        color: #626262;
+        font-size: 15px;
+        font-weight: 300;
+        justify-content: center;
+    }
+}
+
+@media(max-width:500px){
+    .navbar{
+        width: auto;
+        gap: 0px;
+    }
+
+    .nav-logo{
+        transform: scale(0.8);
+        padding-right: 40px;
+        position: absolute;
+        margin-top: 2.5%;
+    }
+
+    .nav-cart-count{
+        position: absolute;
+        background: none;
+        color: #ff4141;
+        margin-left: 85.5%;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .nav-logo p{
+        display: none;
+    }
+
+    .searchbar{
+        width: 80%;
+        height: 65%;
+    }
+
+    .nav-small-screen{
+        margin-right: 25px;
+    }
+    
+    .search-display p{
+        margin-right: 90%;
+        margin-left: 0;
+    }
+
+    .search-results{
+        margin-left: 24%;
+    }
+
+    .search-results img{
+        height: 250px;
+    }
+
+    .search-results p{
+        max-width: 67%;
+    }
+}
+
