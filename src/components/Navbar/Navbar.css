@@ -215,12 +215,14 @@
     }
 
     .nav-cart-count{
-        position: absolute;
-        background: none;
-        color: #ff4141;
-        margin-left: 85.5%;
-        font-size: 15px;
-        font-weight: 500;
+        width:30px;
+    }
+
+    .nav-login-cart button{
+        width: 60px;
+        height: 30px;
+        margin-left: 0px;
+        font-size: 12px;
     }
 
     .nav-logo p{

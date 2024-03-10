@@ -191,8 +191,14 @@
 
     .nav p{
         color: #171717;
-        font-size: 28px;
+        font-size: 25px;
         font-weight: 500;
+        margin-top: 3%;
+    }
+
+    .nav img{
+        margin-left: 5%;
         margin-top: 2%;
+        height: 50px;
     }
 }
